@@ -65,7 +65,7 @@ def article(id):
     """
     cur = mysql.connection.cursor()
 
-    result = cur.execute("SELECT * FROM articles WHERE id = %s", [id])
+    _ = cur.execute("SELECT * FROM articles WHERE id = %s", [id])
 
     article = cur.fetchone()
 
@@ -251,7 +251,7 @@ def edit_article(id):
     """
     cur = mysql.connection.cursor()
 
-    result = cur.execute("SELECT * FROM articles where id = %s", [id])
+    _ = cur.execute("SELECT * FROM articles where id = %s", [id])
 
     article = cur.fetchone()
 
