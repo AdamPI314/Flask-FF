@@ -101,8 +101,6 @@ def register():
     return render_template('register.html', form=form)
 
 # user login
-
-
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     """
