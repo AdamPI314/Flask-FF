@@ -7,11 +7,22 @@ docker run [options] image_name exec_command
     -name,
     -rm
 
+docker container ls
 docker stop container_id
 docker start container_id
+
 docker images
 docker rmi
-docker build
-docker pull
-docker push
+
+https://docs.docker.com/get-started/part2/#run-the-app
+Build the app
 Dockerfile
+docker build
+docker build -t friendlyhello .
+
+docker tag image username/repository:tag
+docker tag friendlyhello john/get-started:part1
+
+docker pull
+docker push username/repository:tag
+docker push
